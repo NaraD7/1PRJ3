@@ -11,10 +11,10 @@
     <main>
         <div class="container-info">
             <h2>INFORMATIONS</h2>
-            <p class='num-tel'><span>Numéro :</span> 01.23.45.56.78</p>
+            <p class='num-tel'><span>Numéro :</span> 01.23.45678.56.78</p>
             <p class='email'><span>Email :</span> coiffeur@gmail.com</p>
             <div class="horaires-container">
-                <?php ?>
+                <?php echo neuille ?>
             </div>
 
         </div>
