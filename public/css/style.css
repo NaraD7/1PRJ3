@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.footer-light{
+    background-color: black;
+    min-height: 10vh;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.svg-bar{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.container-info{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.num-tel , .email{
+    background-color: rgb(223, 223, 223);
+    padding: 15px;
+    border-radius: 30px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+span{
+    font-weight: 600;
+}
+
+
+svg{
+    width: 30px;
+    height: 30px;
+}
+
+main{
+    min-height: 90vh;
+    margin: 0;
+}
