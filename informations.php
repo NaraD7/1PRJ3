@@ -1,3 +1,4 @@
+<?php require 'config/database.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -14,7 +15,19 @@
             <p class='num-tel'><span>Numéro :</span> 01.23.45678.56.78</p>
             <p class='email'><span>Email :</span> coiffeur@gmail.com</p>
             <div class="horaires-container">
-                <?php echo neuille ?>
+                <?php
+                    // Récupérer TOUS les articles avec leur catégorie et auteur
+                    $sql = "SELECT * from disponibilite ;";
+                    $stmt = $pdo->query($sql);
+                    $heures = $stmt->fetchAll();
+
+                    foreach ($heures as $heure) {
+                        echo "<div class='jour-horaire'>";
+                        echo "<p>" . htmlspecialchars($heure['jour_semaine']) . "</p>";
+                        echo "<p>" . htmlspecialchars($heure['heure_debut_matin'])  . htmlspecialchars($heure['heure_fin_matin']). htmlspecialchars($heure['heure_debut_apresmidi']). htmlspecialchars($heure['heure_fin_apresmidi'])."</p>";
+                        echo "</div>";
+                    }
+                ?>
             </div>
 
         </div>

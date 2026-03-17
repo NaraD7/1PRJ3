@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$dbname = 'salon';   // nom de ta base
+$dbname = '1PRJ3';   // nom de ta base
 $user = 'root';
 $password = '';
 

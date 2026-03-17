@@ -41,6 +41,27 @@ a{
     border-radius: 30px;
 }
 
+.horaires-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.jour-horaire{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: beige;
+    padding: 10px;
+    border-radius: 25px;
+    min-width: 300px;
+    max-width: 300px;
+}
+
 h2{
     display: flex;
     justify-content: center;
