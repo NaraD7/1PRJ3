@@ -110,3 +110,44 @@ main{
     min-height: 90vh;
     margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        gap: 15px;
+        text-align: center;
+    }
+
+    .all-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .container-info {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .google-maps {
+        width: 100% !important;
+        height: auto;
+        max-width: 350px;
+    }
+
+    .jour-horaire {
+        min-width: 90%;
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    .contact {
+        width: 100%;
+        align-items: center;
+    }
+
+    .num-tel, .email {
+        width: 80%;
+        text-align: center;
+    }
+}
