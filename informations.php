@@ -35,11 +35,18 @@
                             $fin_matin = date('H', strtotime($heure['heure_fin_matin']));
                             $debut_apresmidi = date('H', strtotime($heure['heure_debut_apresmidi']));
                             $fin_apresmidi = date('H', strtotime($heure['heure_fin_apresmidi']));
+                            if ($heure['jour_semaine'] == 'Dimanche'){
+                                echo "<div class='jour-horaire'>";
+                                echo "<p>" . htmlspecialchars($heure['jour_semaine']) . "</p>";
+                                echo "<p>Fermé</p>";
+                                echo "</div>";
+                            }else{
+                                echo "<div class='jour-horaire'>";
+                                echo "<p>" . htmlspecialchars($heure['jour_semaine']) . "</p>";
+                                echo "<p>{$debut_matin}h-{$fin_apresmidi}h</p>";
+                                echo "</div>";
+                            }
                             
-                            echo "<div class='jour-horaire'>";
-                            echo "<p>" . htmlspecialchars($heure['jour_semaine']) . "</p>";
-                            echo "<p>{$debut_matin}h-{$fin_apresmidi}h</p>";
-                            echo "</div>";
                      }
                 ?>
             </div>

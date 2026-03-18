@@ -12,6 +12,28 @@ a{
     min-height: 10vh;
 }
 
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+span{
+    font-weight: 600;
+}
+
+
+svg{
+    width: 30px;
+    height: 30px;
+}
+
+main{
+    min-height: 90vh;
+    margin: 0;
+}
+
+
+@media (min-width: 1025px) { 
 .header{
     display: flex;
     flex-direction: row;
@@ -82,22 +104,53 @@ a{
     gap: 15px;
 }
 
-h2{
+
+.image-container{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.main-image img{
+        width : 400px ;
+        height : 305px;
+    }
+
+.second-image {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-span{
-    font-weight: 600;
+.second-image img{
+    width: 250px;
+    height: 150px;
 }
 
-
-svg{
-    width: 30px;
-    height: 30px;
 }
 
-main{
-    min-height: 90vh;
-    margin: 0;
+/* Mobiles standards */
+@media (max-width: 500px) { 
+    .image-container{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .second-image {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .main-image img{
+        width : 200px ;
+        height : 152.5px;
+    }
+    .second-image img{
+        width: 125px;
+        height: 75px;
+    }
+
+    
+
 }
