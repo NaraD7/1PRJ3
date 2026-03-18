@@ -19,6 +19,10 @@
                 <img src="./public/images/image2.jpg" alt="image2">
                 <img src="./public/images/image3.jpg" alt="image3">
             </div>
+            <div class="second-image">
+                <img src="./public/images/image2.jpg" alt="image2">
+                <img src="./public/images/image3.jpg" alt="image3">
+            </div>
         </div>
     </main>
     <?php include 'includes/footer.php'; ?>
