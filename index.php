@@ -10,15 +10,16 @@
 
 <body>
     <?php include 'includes/header.php'; ?>
-    <div class="image-container">
-        <div class="main-image">
-            <img src="./public/images/image1.jpg" alt="image1" >
+    <main>
+        <div class="image-container">
+            <div class="main-image">
+                <img src="./public/images/image1.jpg" alt="image1" >
+            </div>
+            <div class="second-image">
+                <img src="./public/images/image2.jpg" alt="image2">
+                <img src="./public/images/image3.jpg" alt="image3">
+            </div>
         </div>
-        <div class="second-image">
-            <img src="./public/images/image2.jpg" alt="image2">
-            <img src="./public/images/image3.jpg" alt="image3">
-        </div>
-    </div>
-
+    </main>
     <?php include 'includes/footer.php'; ?>
 
