@@ -7,9 +7,16 @@ a{
     text-decoration: none;
 }
 
-.footer-light{
+.footer{
     background-color: black;
     min-height: 10vh;
+}
+
+.reseaux{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 .header{
