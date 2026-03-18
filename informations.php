@@ -22,11 +22,18 @@
                     $heures = $stmt->fetchAll();
 
                     foreach ($heures as $heure) {
-                        echo "<div class='jour-horaire'>";
-                        echo "<p>" . htmlspecialchars($heure['jour_semaine']) . "</p>";
-                        echo "<p>" . htmlspecialchars($heure['heure_debut_matin'])  . htmlspecialchars($heure['heure_fin_matin']). htmlspecialchars($heure['heure_debut_apresmidi']). htmlspecialchars($heure['heure_fin_apresmidi'])."</p>";
-                        echo "</div>";
-                    }
+                            $debut_matin = date('H', strtotime($heure['heure_debut_matin']));
+                            $fin_matin = date('H', strtotime($heure['heure_fin_matin']));
+                            $debut_apresmidi = date('H', strtotime($heure['heure_debut_apresmidi']));
+                            $fin_apresmidi = date('H', strtotime($heure['heure_fin_apresmidi']));
+                            
+                            echo "<div class='jour-horaire'>";
+                            echo "<p>" . htmlspecialchars($heure['jour_semaine']) . "</p>";
+                            echo "<p>{$debut_matin}h-{$fin_apresmidi}h</p>";
+                            echo "</div>";
+                     }
+                        
+                    
                 ?>
             </div>
 
