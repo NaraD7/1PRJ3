@@ -10,17 +10,8 @@
 
 <body>
     <?php include 'includes/header.php'; ?>
-    <?php
-        // Récupérer TOUS les articles avec leur catégorie et auteur
-        $sql = "SELECT * from client ;";
-        $stmt = $pdo->query($sql);
-        $clients = $stmt->fetchAll();
-
-        foreach ($clients as $client) {
-            echo "<p>" . htmlspecialchars($client['nom']) . "</p>";
-            echo "<p>" . htmlspecialchars($client['email']) . "</p>";
-        }
-    ?>
+    
+    <img src="./public/images/image1.jpg" alt="image1" width="300px">
 
     <?php include 'includes/footer.php'; ?>
 

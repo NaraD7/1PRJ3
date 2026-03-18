@@ -38,7 +38,7 @@
                             
                             echo "<div class='jour-horaire'>";
                             echo "<p>" . htmlspecialchars($heure['jour_semaine']) . "</p>";
-                            echo "<p>{$debut_matin}h-{$fin_matin}h<br>{$debut_apresmidi}h-{$fin_apresmidi}h</p>";
+                            echo "<p>{$debut_matin}h-{$fin_apresmidi}h</p>";
                             echo "</div>";
                      }
                 ?>
