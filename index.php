@@ -15,13 +15,15 @@
             <div class="main-image">
                 <img src="./public/images/image1.jpg" alt="image1" >
             </div>
-            <div class="second-image">
-                <img src="./public/images/image2.jpg" alt="image2">
-                <img src="./public/images/image3.jpg" alt="image3">
-            </div>
-            <div class="second-image">
-                <img src="./public/images/image2.jpg" alt="image2">
-                <img src="./public/images/image3.jpg" alt="image3">
+            <div class="second-image-container">
+                <div class="second-image">
+                    <img src="./public/images/image2.jpg" alt="image2">
+                    <img src="./public/images/image3.jpg" alt="image3">
+                </div>
+                <div class="second-image">
+                    <img src="./public/images/image2.jpg" alt="image2">
+                    <img src="./public/images/image3.jpg" alt="image3">
+                </div>
             </div>
         </div>
     </main>
