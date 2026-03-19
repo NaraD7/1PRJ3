@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Cinzel:wght@400..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lexend+Deca:wght@100..900&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 a{
@@ -28,6 +31,7 @@ a{
     padding: 15px;
     min-height: 75px;
     background-color: rgb(255, 255, 255);
+    font-family: nunito;
 }
 
 
