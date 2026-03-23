@@ -31,10 +31,10 @@
                     $heures = $stmt->fetchAll();
 
                     foreach ($heures as $heure) {
-                            $debut_matin = date('H', strtotime($heure['heure_debut_matin']));
-                            $fin_matin = date('H', strtotime($heure['heure_fin_matin']));
-                            $debut_apresmidi = date('H', strtotime($heure['heure_debut_apresmidi']));
-                            $fin_apresmidi = date('H', strtotime($heure['heure_fin_apresmidi']));
+                            $debut_matin = date('H:i', strtotime($heure['heure_debut_matin']));
+                            $fin_matin = date('H:i', strtotime($heure['heure_fin_matin']));
+                            $debut_apresmidi = date('H:i', strtotime($heure['heure_debut_apresmidi']));
+                            $fin_apresmidi = date('H:i', strtotime($heure['heure_fin_apresmidi']));
                             
                             if($heure['jour_semaine'] == 'Dimanche'){
                                 echo "<div class='jour-horaire'>";
