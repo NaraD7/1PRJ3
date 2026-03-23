@@ -6,6 +6,10 @@
     font-family: nunito;
 }
 
+body{
+    background-color: #fffcf8;
+}
+
 :root{
     --white-font: rgb(232,232,232);
 }
@@ -197,7 +201,7 @@ main{
     color: rgb(55, 55, 55);
     padding: 15px;
     border-radius: 15px;
-    width:200px;
+    width:400px;
 }
 
 
