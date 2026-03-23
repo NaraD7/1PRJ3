@@ -41,6 +41,8 @@
 
                     <input type="text" name="nom" placeholder="Votre nom" required>
 
+                    <input type="text" name="email" placeholder="Votre adresse e-mail" required>
+
                     <button type="submit">Réserver</button>
             </form>
 
@@ -51,6 +53,7 @@
                     $date = $_POST['date'];
                     $heure = $_POST['heure'];
                     $statut = "en_attente";
+                    $nom = $_POST['nom'];
 
                     $sql = "INSERT INTO reservation (nom_prestation, date_rdv, heure_rdv, statut)
                             VALUES (:reserv, :date, :heure, :statut)";
@@ -62,6 +65,21 @@
                         ':heure' => $heure,
                         ':statut' => $statut
                     ]);
+
+                    $nom = htmlspecialchars($_POST["nom"]);
+                    $date = htmlspecialchars($_POST["date"]);
+                    $heure = htmlspecialchars($_POST["heure"]);
+
+                    $subject = "Votre réservation.";
+
+                    $message = "Bonjour $nom vous avez réserver une prestation le $date à $heure dans notre salon.";
+
+                    $headers = "From: lilian.denizon@gmail.com\r\n";
+                    $headers .= "Reply-To: lilian.denizon@gmail.com\r\n";
+                    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+                    mail($to,$subject,$message,$headers);
+
                     header("Location: reservation.php");
                     exit;
                     
