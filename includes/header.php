@@ -1,5 +1,5 @@
 <div class="header">
-    <h1>COIFFEUR</h1>
+    <h1>HAIR DESIGN</h1>
     <div class="svg-bar"> 
         
         <a href="index.php">
