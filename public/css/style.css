@@ -124,15 +124,6 @@ main{
     gap: 15px;
 }
 
-
-.contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-}
-
-
 .image-container{
     display: flex;
     justify-content: center;
