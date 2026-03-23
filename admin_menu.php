@@ -75,7 +75,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'delete_service') {
 <body>
 
 <header class="admin-header">
-    <div class="logo">Hair Salon</div>
+    <h1>Coiffure</h1>
     <nav class="admin-nav">
         <a href="?section=dashboard">Dashboard</a>
         <a href="config/deconnexion.php" style="color:#ef4444">Déconnexion</a>
