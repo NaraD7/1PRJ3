@@ -6,8 +6,16 @@
     font-family: nunito;
 }
 
+:root{
+    --white-font: rgb(232,232,232);
+}
+
 a{
     text-decoration: none;
+}
+
+main{
+    margin: 0;
 }
 
 .footer{
@@ -31,14 +39,18 @@ a{
     align-items: center;
     padding: 20px;
     min-height: 75px;
-    background-color: rgb(255, 255, 255);
-    
+    background-color: rgb(80,80,80);
+    color: rgb(232,232,232);
+}
+
+.header svg{
+    color: rgb(232, 232, 232);
 }
 
 .button-accueil{
     background-color: rgb(218, 218, 218);
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -49,6 +61,7 @@ a{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    color:var(--white-font) ;
 }
 
 .container-info{
@@ -286,7 +299,7 @@ button{
     border-radius: 25px;
     min-width: 100px;
     padding: 10px;
-    color: white;
+    color: var(--white-font);
     background-color: rgb(80,80,80);
 }
 

@@ -10,8 +10,6 @@
 
 <body>
     <?php include 'includes/header.php'; ?>
-    <main>
-
         <div class='button-accueil'>
                 <a href="reservation.php"><button>Réserver</button></a>
                 <a href="informations.php"><button>Informations</button></a>
@@ -145,6 +143,5 @@
 
         </div>
     </div>
-    </main>
     <?php include 'includes/footer.php'; ?>
 
