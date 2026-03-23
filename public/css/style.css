@@ -83,7 +83,7 @@ a{
 
 .all-info{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -212,13 +212,45 @@ a{
 
 .reservations{
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
+    background-color: #dcdcdc;
+    padding: 20px;
+    min-height: 71.5vh;
 }
 
 .service{
     padding: 5px;
     background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+
+
+.form-resa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 300px;
+    font-size: 50px;
+}
+
+input{
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
     border-radius: 15px;
+    border: 1px solid rgb(200, 200, 200);
+    height: 25px;
+    width: 80%;
+    font-size: 16px;
+}
+
+select{
+    height: 30px;
+    width: 80%;
+    font-size: 14px;
 }
 
 .service-container {

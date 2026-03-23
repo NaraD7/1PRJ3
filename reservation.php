@@ -9,11 +9,13 @@
 </head>
 <body>
     <?php include 'includes/header.php'; ?>
-        <h2>Reservations</h2>
-<br><br>
+        
+
 <div class="reservations">
+    <h2>Reservations</h2>
+    <br>
         <div class="service-container">
-            <form action="" method="post">
+            <form action="" method="post" class='form-resa'>
                 <select id="prestation" name='reserv-prestation'>
                 <?php
                             // Récupérer TOUS les articles avec leur catégorie et auteur
