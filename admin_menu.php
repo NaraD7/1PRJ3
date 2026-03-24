@@ -65,7 +65,6 @@ if (isset($_GET['action']) && $_GET['action'] === 'delete_service') {
     exit;
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -75,14 +74,8 @@ if (isset($_GET['action']) && $_GET['action'] === 'delete_service') {
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+<?php include 'includes/header.php'; ?>
 
-<header class="admin-header">
-    <h1>Coiffure</h1>
-    <nav class="admin-nav">
-        <a href="?section=dashboard">Dashboard</a>
-        <a href="config/deconnexion.php" style="color:#ef4444">Déconnexion</a>
-    </nav>
-</header>
 
 <main class="container">
     <?php if ($section === 'dashboard'): ?>
