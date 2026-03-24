@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $mdp_saisi = isset($_POST['mdp']) ? $_POST['mdp'] : '';
 
     if ($pseudo_saisi === LOGIN && password_verify($mdp_saisi, PASSWORD)) {
-        $_SESSION['admin_auth'] = true;
+        $_SESSION['admin'] = true;
         header('Location: admin_menu.php');
         exit;
     } else {

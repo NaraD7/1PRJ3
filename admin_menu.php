@@ -19,11 +19,7 @@ if (isset($_GET['action']) && isset($_GET['id']) && $section === 'agenda') {
 
 
 if (isset($_POST['update_dispo'])) {
-    $sql = "UPDATE disponibilite SET 
-            heure_debut_matin = ?, heure_fin_matin = ?, 
-            heure_debut_apresmidi = ?, heure_fin_apresmidi = ?, 
-            actif = ? 
-            WHERE id = ?";
+    $sql = "UPDATE disponibilite SET heure_debut_matin = ?, heure_fin_matin = ?, heure_debut_apresmidi = ?, heure_fin_apresmidi = ?, actif = ? WHERE id = ?";
 
     $hdm = !empty($_POST['hdm']) ? $_POST['hdm'] : null;
     $hfm = !empty($_POST['hfm']) ? $_POST['hfm'] : null;
