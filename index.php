@@ -12,7 +12,7 @@
     <?php include 'includes/header.php'; ?>
         <div class='button-accueil'>
                 <a href="reservation.php"><button>Réserver</button></a>
-                <a href="informations.php"><button>Informations</button></a>
+                <a href="informations.php"><button>A Propos</button></a>
                 <a href="connexion.php"><button>Connexion</button></a>
         </div>
             <br>

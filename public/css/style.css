@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #fffcf8;
+    background-color: #fdf4f4;
 }
 
 :root{
@@ -43,7 +43,12 @@ main{
     display: flex;
     flex-direction: row;
     gap: 5px;
-    justify-content: space-around;
+}
+
+.logo-reseaux svg:hover{
+    width: 20px;
+    cursor: pointer;
+    filter: brightness(0.7);
 }
 
 .contacts svg{
@@ -99,13 +104,41 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
+    max-width: 840px;
 }
 
-.num-tel , .email{
-    background-color: rgb(243, 243, 243);
+.horaires-propos{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+
+.propos{
+    width: 400px;
+}
+
+.num-tel , .email, .adresse{
+    display: flex;
+    justify-content: center;
     padding: 15px;
+    color: white;
     border-radius: 30px;
+}
+
+.horaire-entete{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.horaire-entete svg:hover{
+    cursor:default;
+    color: white;
 }
 
 .horaires-container{
@@ -115,19 +148,33 @@ main{
     align-items: center;
     padding: 10px;
     border-radius: 10px;
-    box-shadow:
-  0.3em 0.3em 0.3em 0.3em rgb(247, 247, 247);
+    width: 300px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(243,243,243);
 }
+
+.contact-photo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+
 
 .google-maps{
     border-radius: 25px;
+    width: 760px;
 }
+
 
 .all-info{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 10px;
 }
+
 
 .jour-horaire{
     display: flex;
@@ -136,9 +183,7 @@ main{
     align-items: center;
     gap: 50px;
     padding: 10px;
-    min-width: 200px;
-    max-width: 200px;
-    border-bottom: solid 0.5px rgb(202, 202, 202);
+    min-width: 300px;
 }
 
 
@@ -146,7 +191,37 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 15px;
+    gap: 5px;
+}
+
+.contacts-container{
+    background-color: rgb(41,41,41);
+    padding: 15px;
+    border-radius: 15px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contacts-container button{
+    color: black;
+    background-color: rgb(218, 218, 218);
+    width: 75%;
+}
+
+.contacts-container a{
+    color: black;
+}
+
+.contacts-container h2{
+    color: rgb(218, 218, 218);
+}
+
+.contact-photo img, .contact-container{
+    width: 400px;
+    border-radius: 15px;
 }
 /*------------------------------------------------------------------*/
 
@@ -344,6 +419,10 @@ select{
 
 
 /*------------------------------------------------------------------*/
+a{
+    text-decoration: none;
+}
+
 span{
     font-weight: 600;
 }
@@ -470,6 +549,22 @@ option{
 }
 
 @media screen and (max-width: 768px) {
+
+    .all-info{
+        margin:10px;
+    }
+    .horaires-propos{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+}
+    .contact-photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
 
     .header {
         gap: 15px;
