@@ -261,3 +261,36 @@ td {
     background: #e11d48;
     color: white;
 }
+
+table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+}
+
+.td-client {
+    color: var(--text-main);
+    min-width: 120px;
+}
+
+.td-phone {
+    font-family: 'Atkinson Hyperlegible Mono', monospace;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.td-email a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.td-email a:hover {
+    text-decoration: underline;
+}
+
+.btn-group-agenda {
+    display: flex;
+    gap: 8px;
+    min-width: 150px;
+}
