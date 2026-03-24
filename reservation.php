@@ -15,7 +15,7 @@
     <h2>Reservations</h2>
     <br>
         <div class="service-container">
-            <form action="" method="post" class='form-resa'>
+            <form action="" method="post" class='form-resa' id='form-resa'>
                 <select id="prestation" name='reserv-prestation'>
                 <?php
                             // Récupérer TOUS les articles avec leur catégorie et auteur
@@ -31,22 +31,23 @@
                     </select>
 
                     <input type="date" name="date" class="date" required>
+
                     <select class="choix-heure" name='heure' required>
+
                         <option>10:30</option>
                         <option>11:30</option>
                         <option>14:30</option>
                         <option>16:30</option>
                         <option>17:00</option>
+
                     </select>
-
-
                     
                     <input type="text" name="nom" placeholder="Votre nom" required>
-                    
-                    <p class='validation-mail'>Adresse mail invalide</p>
-                    <input type="text" class="input-email" name="email" placeholder="Votre adresse e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+
+                    <input type="email" class="input-email" name="email" placeholder="Votre adresse e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                     
                     <button type="submit">Réserver</button>
+
                 </form>
 
             <?php 
