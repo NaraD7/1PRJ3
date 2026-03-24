@@ -138,6 +138,8 @@ main{
     gap: 15px;
 }
 
+
+
 .image-container{
     display: flex;
     justify-content: center;
@@ -248,6 +250,12 @@ main{
     border-radius: 10px;
 }
 
+.validation-prenom{
+    display: none;
+    flex-wrap: wrap;
+    font-size: 16px;
+    background-color: navy;
+}
 
 
 .form-resa{

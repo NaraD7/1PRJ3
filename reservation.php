@@ -40,7 +40,9 @@
                     </select>
 
 
-
+                    <div class="validation-prenom">
+                        <p>votre prénom ne peut pas contenir de chiffres</p>
+                    </div>
                     <input type="text" name="nom" placeholder="Votre nom" required>
 
                     <input type="text" name="email" placeholder="Votre adresse e-mail" required>
