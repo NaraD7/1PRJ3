@@ -42,6 +42,7 @@ main{
 .logo-reseaux{
     display: flex;
     flex-direction: row;
+    gap: 5px;
     justify-content: space-around;
 }
 
@@ -351,6 +352,7 @@ svg{
     width: 30px;
     height: 30px;
     cursor: pointer;
+    transition-duration: 300ms;
 }
 
 svg:hover{
