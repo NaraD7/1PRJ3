@@ -13,15 +13,10 @@ require 'src/functions.php';
 <?php include 'includes/header.php'; ?>
 
 <div class="reservations">
-    <h2>Réserver un service</h2>
-    <form action="" method="post" class='form-resa'>
-        <select name='id_service' required>
-            <?php
-            $services = $pdo->query("SELECT * FROM service")->fetchAll();
-            foreach ($services as $s) {
-                echo "<option value='{$s['id']}'>{$s['nom']} ({$s['duree_minutes']} min)</option>";
-            }
-            ?>
+    <h2>Reservations</h2>
+    <br>
+    <form action="">
+        <div class="service-container">
         </select>
 
         <input type="date" name="date" required>
@@ -67,5 +62,3 @@ require 'src/functions.php';
     ?>
 </div>
 <?php include 'includes/footer.php'; ?>
-</body>
-</html>
