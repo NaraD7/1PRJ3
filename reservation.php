@@ -30,8 +30,8 @@
                     
                     </select>
 
-                    <input type="date" name="date" class="date">
-                    <select class="choix-heure" name='heure'>
+                    <input type="date" name="date" class="date" required>
+                    <select class="choix-heure" name='heure' required>
                         <option>10:30</option>
                         <option>11:30</option>
                         <option>14:30</option>
@@ -40,15 +40,14 @@
                     </select>
 
 
-                    <div class="validation-prenom">
-                        <p>votre prénom ne peut pas contenir de chiffres</p>
-                    </div>
+                    
                     <input type="text" name="nom" placeholder="Votre nom" required>
-
-                    <input type="text" name="email" placeholder="Votre adresse e-mail" required>
-
+                    
+                    <p class='validation-mail'>Adresse mail invalide</p>
+                    <input type="text" class="input-email" name="email" placeholder="Votre adresse e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    
                     <button type="submit">Réserver</button>
-            </form>
+                </form>
 
             <?php 
                 if (isset($_POST['reserv-prestation'], $_POST['date'], $_POST['heure'])) {

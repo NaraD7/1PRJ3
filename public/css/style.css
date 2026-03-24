@@ -65,14 +65,7 @@ main{
     color: rgb(232, 232, 232);
 }
 
-.button-accueil{
-    background-color: rgb(218, 218, 218);
-    width: 100%;
-    padding: 15px;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
+
  
 
 .svg-bar{
@@ -81,7 +74,15 @@ main{
     gap: 10px;
     color:var(--white-font) ;
 }
+/*------------------------------------------------------------------*/
 
+
+
+/* PAGE INFORMATIONS */
+
+
+
+/*------------------------------------------------------------------*/
 .container-info{
     margin-top: 35px;
     display: flex;
@@ -137,8 +138,22 @@ main{
     justify-content: center;
     gap: 15px;
 }
+/*------------------------------------------------------------------*/
 
 
+
+/* PAGE ACCUEIL */
+
+
+/*------------------------------------------------------------------*/
+.button-accueil{
+    background-color: rgb(218, 218, 218);
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
 
 .image-container{
     display: flex;
@@ -233,7 +248,15 @@ main{
     height: 16px;
     color: rgb(255, 166, 0);
 }
+/*------------------------------------------------------------------*/
 
+
+
+/* PAGE RESERVATION*/
+
+
+
+/*------------------------------------------------------------------*/
 .reservations{
     display: flex;
     align-items: center;
@@ -250,13 +273,35 @@ main{
     border-radius: 10px;
 }
 
-.validation-prenom{
-    display: none;
-    flex-wrap: wrap;
+.input-email:valid{
+    display: flex;
+    justify-content: center;
     font-size: 16px;
-    background-color: navy;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
 }
 
+.input-email:invalid{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    color: #000000;
+    border-color: #d63031;
+    background-color: #ffb0b0;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+
+.form-resa p{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    background-color: #a88f8f;
+    padding: 15px;
+    border-radius: 15px;
+}
 
 .form-resa{
     display: flex;
@@ -289,7 +334,15 @@ select{
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
 }
+/*------------------------------------------------------------------*/
 
+
+
+/*  GENERAL  */
+
+
+
+/*------------------------------------------------------------------*/
 span{
     font-weight: 600;
 }
