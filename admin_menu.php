@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+if (!isset($_SESSION['admin']) || $_SESSION['admin'] !== true) {
+    header("Location: connexion.php");
+    exit;
+}
+
 require_once 'config/database.php';
 
 $section = isset($_GET['section']) ? $_GET['section'] : 'dashboard';
