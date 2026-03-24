@@ -74,7 +74,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'delete_service') {
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-<?php include 'includes/header.php'; ?>
+<?php include 'includes/header-admin.php'; ?>
 
 
 <main class="container">
