@@ -13,10 +13,15 @@ require 'src/functions.php';
 <?php include 'includes/header.php'; ?>
 
 <div class="reservations">
-    <h2>Reservations</h2>
-    <br>
-    <form action="">
-        <div class="service-container">
+    <h2>Réserver un service</h2>
+    <form action="" method="post" class='form-resa'>
+        <select name='id_service' required>
+            <?php
+            $services = $pdo->query("SELECT * FROM service")->fetchAll();
+            foreach ($services as $s) {
+                echo "<option value='{$s['id']}'>{$s['nom']} ({$s['duree_minutes']} min)</option>";
+            }
+            ?>
         </select>
 
         <input type="date" name="date" required>
@@ -30,7 +35,7 @@ require 'src/functions.php';
 
         <input type="text" name="nom_client" placeholder="Votre nom" required>
         <input type="email" name="email_client" placeholder="Email" required>
-        <input type="text" name="telephone" placeholder="Téléphone">
+        <input type="text" name="telephone" placeholder="Téléphone" pattern="^0[67][0-9]{8}$" value="0603030303">
 
         <button type="submit">Réserver</button>
     </form>
@@ -43,6 +48,11 @@ require 'src/functions.php';
         $nom = htmlspecialchars($_POST['nom_client']);
         $email = htmlspecialchars($_POST['email_client']);
         $tel = htmlspecialchars($_POST['telephone']);
+
+        if (!preg_match("/^0[67][0-9]{8}$/", $tel)) {
+                die("Téléphone invalide");
+        }
+
 
         if (isSlotAvailable($pdo, $date, $heure, $id_service)) {
             $sql = "INSERT INTO reservation (id_service, date_rdv, heure_rdv, nom_client, email_client, telephone, statut)
@@ -62,3 +72,5 @@ require 'src/functions.php';
     ?>
 </div>
 <?php include 'includes/footer.php'; ?>
+</body>
+</html>
