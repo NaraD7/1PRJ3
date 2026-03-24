@@ -99,6 +99,9 @@ if (isset($_GET['action']) && $_GET['action'] === 'delete_service') {
             <table>
                 <thead>
                 <tr>
+                    <th>Nom Client</th>
+                    <th>Téléphone</th>
+                    <th>Email</th>
                     <th>Prestation</th>
                     <th>Date & Heure</th>
                     <th>Statut</th>
@@ -107,10 +110,15 @@ if (isset($_GET['action']) && $_GET['action'] === 'delete_service') {
                 </thead>
                 <tbody>
                 <?php
-                $resas = $pdo->query("SELECT * FROM reservation ORDER BY date_rdv DESC, heure_rdv DESC")->fetchAll();
+                $resas = $pdo->query("SELECT r.*, s.nom AS nom_prestation FROM reservation r JOIN service s ON r.id_service = s.id ORDER BY r.date_rdv DESC, r.heure_rdv DESC")->fetchAll();
+
                 foreach($resas as $r): ?>
                     <tr>
-                        <td><strong><?= htmlspecialchars($r['nom_prestation']) ?></strong></td>
+                        <td class="td-client"><strong><?= htmlspecialchars($r['nom_client']) ?></strong></td>
+                        <td class="td-phone"><?= htmlspecialchars($r['telephone']) ?></td>
+                        <td class="td-email"><a href="mailto:<?= htmlspecialchars($r['email_client']) ?>"><?= htmlspecialchars($r['email_client']) ?></a></td>
+
+                        <td class="td-prestation"><strong><?= htmlspecialchars($r['nom_prestation']) ?></strong></td>
                         <td><?= date('d/m/Y', strtotime($r['date_rdv'])) ?> à <?= substr($r['heure_rdv'], 0, 5) ?></td>
                         <td><span class="badge <?= $r['statut'] ?>"><?= str_replace('_', ' ', $r['statut']) ?></span></td>
 
