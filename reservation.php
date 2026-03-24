@@ -35,7 +35,7 @@ require 'src/functions.php';
 
         <input type="text" name="nom_client" placeholder="Votre nom" required>
         <input type="email" name="email_client" placeholder="Email" required>
-        <input type="text" name="telephone" placeholder="Téléphone">
+        <input type="text" name="telephone" placeholder="Téléphone" pattern="^0[67][0-9]{8}$" value="0603030303">
 
         <button type="submit">Réserver</button>
     </form>
@@ -48,6 +48,11 @@ require 'src/functions.php';
         $nom = htmlspecialchars($_POST['nom_client']);
         $email = htmlspecialchars($_POST['email_client']);
         $tel = htmlspecialchars($_POST['telephone']);
+
+        if (!preg_match("/^0[67][0-9]{8}$/", $tel)) {
+                die("Téléphone invalide");
+        }
+
 
         if (isSlotAvailable($pdo, $date, $heure, $id_service)) {
             $sql = "INSERT INTO reservation (id_service, date_rdv, heure_rdv, nom_client, email_client, telephone, statut)

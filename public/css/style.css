@@ -65,14 +65,7 @@ main{
     color: rgb(232, 232, 232);
 }
 
-.button-accueil{
-    background-color: rgb(218, 218, 218);
-    width: 100%;
-    padding: 15px;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
+
  
 
 .svg-bar{
@@ -81,7 +74,15 @@ main{
     gap: 10px;
     color:var(--white-font) ;
 }
+/*------------------------------------------------------------------*/
 
+
+
+/* PAGE INFORMATIONS */
+
+
+
+/*------------------------------------------------------------------*/
 .container-info{
     margin-top: 35px;
     display: flex;
@@ -137,6 +138,22 @@ main{
     justify-content: center;
     gap: 15px;
 }
+/*------------------------------------------------------------------*/
+
+
+
+/* PAGE ACCUEIL */
+
+
+/*------------------------------------------------------------------*/
+.button-accueil{
+    background-color: rgb(218, 218, 218);
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
 
 .image-container{
     display: flex;
@@ -188,6 +205,8 @@ main{
     padding: 10px;
     gap: 15px;
     width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     background-color: rgb(218, 218, 218);
 }
 
@@ -198,7 +217,7 @@ main{
     justify-content: center;
     align-items: center;
     margin: 10px;
-    gap: 10px;
+    gap: 3px;
 }
 
 .avis{
@@ -231,7 +250,15 @@ main{
     height: 16px;
     color: rgb(255, 166, 0);
 }
+/*------------------------------------------------------------------*/
 
+
+
+/* PAGE RESERVATION*/
+
+
+
+/*------------------------------------------------------------------*/
 .reservations{
     display: flex;
     align-items: center;
@@ -248,7 +275,23 @@ main{
     border-radius: 10px;
 }
 
+.input-email{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 15px;
+}
 
+.form-resa p{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    background-color: #a88f8f;
+    padding: 15px;
+    border-radius: 15px;
+}
 
 .form-resa{
     display: flex;
@@ -281,7 +324,15 @@ select{
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
 }
+/*------------------------------------------------------------------*/
 
+
+
+/*  GENERAL  */
+
+
+
+/*------------------------------------------------------------------*/
 span{
     font-weight: 600;
 }
@@ -291,6 +342,13 @@ svg{
     width: 30px;
     height: 30px;
     cursor: pointer;
+}
+
+svg:hover{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    filter: brightness(0.7);
 }
 
 main{
@@ -310,6 +368,11 @@ button{
     padding: 10px;
     color: var(--white-font);
     background-color: rgb(41,41,41);
+}
+
+button:hover{
+    cursor: pointer;
+    filter: brightness(0.7);
 }
 
 select{
@@ -376,7 +439,7 @@ option{
     font-size: 16px;
     margin-top: 10px;
     /* Utilisation de ta couleur de bouton existante */
-    background-color: rgb(255, 179, 156);
+    background-color: rgb(41,41,41);
 }
 
 .btn-login:hover {

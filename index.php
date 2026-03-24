@@ -39,17 +39,7 @@
             <br>
             <br>
             <p>
-            <?php
-                    // Récupérer TOUS les articles avec leur catégorie et auteur
-                    $sql = "SELECT * from coiffeur ;";
-                    $stmt = $pdo->query($sql);
-                    $coiffeurs = $stmt->fetchAll();
-
-                    foreach ($coiffeurs as $coiffeur) {
-                            echo "{$coiffeur['prenom']}, ";
-                     }
-            ?>
-            sont ravis de vous accueillir dans votre salon de coiffure près de chez vous à des prix vraiment intéressants </p>
+            Nos collaborateurs sont ravis de vous accueillir dans votre salon de coiffure près de chez vous à des prix vraiment intéressants </p>
         </div>
         
         <br>
