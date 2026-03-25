@@ -9,7 +9,6 @@
 </head>
 <body>
     <?php include 'includes/header.php'; ?>
-    <main>
         <div class='button-accueil'>
                 <a href="reservation.php"><button>Réserver</button></a>
                 <a href="informations.php"><button>A Propos</button></a>
@@ -60,9 +59,7 @@
                                             echo "</div>";
                                         }
                                         
-                                }
-                                    
-                                
+                                }  
                             ?>
                         </div>
                 </div>
@@ -88,7 +85,6 @@
         </div>
     </div>
         
-    </main>
     <?php include 'includes/footer.php'; ?>
 </body>
 </html>
