@@ -35,7 +35,7 @@ require 'src/functions.php';
 
         <input type="text" name="nom_client" placeholder="Votre nom" required>
         <input type="email" name="email_client" placeholder="Email" required>
-        <input type="text" name="telephone" placeholder="Téléphone" pattern="^0[67][0-9]{8}$" value="0603030303">
+        <input type="text" name="telephone" placeholder="Téléphone" pattern="^0[67][0-9]{8}$">
 
         <button type="submit">Réserver</button>
     </form>

@@ -24,30 +24,82 @@ main{
 
 .footer{
     background-color: rgb(41, 41, 41);
-    width: 100%;
-    min-height: 10vh;
-    color: var(--white-font);
 }
 
-.contacts{
+.footer-contenu{
+    background-color: rgb(41, 41, 41);
+    min-height: 10vh;
+    color: var(--white-font);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.copyright{
+    background-color: rgb(41, 41, 41);
+    color: var(--white-font);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.contacts, .navigation, .service-footer{
     display: flex;
     flex-direction: column;
     color: var(--white-font);
-    width: 150px;
     padding: 10px;
     font-size: 15px;
+    gap: 10px;
     justify-content: flex-start;
 }
 
+
+
 .logo-reseaux{
     display: flex;
-    flex-direction: row;
-    gap: 5px;
+    flex-direction: column;
 }
+
+.logo-reseaux a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: rgb(241,241,241);  
+    transition-duration: 300ms;
+    font-size: 12px;
+}
+
+ .logo-reseaux a:hover{
+    cursor: pointer;
+    filter: brightness(0.7);
+ }
 
 .logo-reseaux svg:hover{
     width: 20px;
     cursor: pointer;
+    filter: brightness(0.7);
+}
+
+.liste-page, .liste-service-footer{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(241,241,241);    
+    transition-duration: 300ms;
+    font-size: 12px;
+    gap: 10px;
+}
+
+.liste-page a{
+    color: rgb(241,241,241);
+    text-decoration: none;
+}
+
+.liste-page a:hover{
     filter: brightness(0.7);
 }
 
@@ -269,7 +321,7 @@ main{
     }
 
 .accueil-container{
-    margin-top: 10px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -349,7 +401,7 @@ main{
     flex-direction: column;
     background-color: #dcdcdc;
     padding: 20px;
-    min-height: 71.5vh;
+    min-height: 90vh;
 }
 
 .service{

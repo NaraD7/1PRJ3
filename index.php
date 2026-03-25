@@ -38,8 +38,8 @@
             <h2>COIFFEUR</h2>
             <br>
             <br>
-            <p>
-            Nos collaborateurs sont ravis de vous accueillir dans votre salon de coiffure près de chez vous à des prix vraiment intéressants </p>
+            <p>Nos collaborateurs sont ravis de vous accueillir dans votre 
+        salon de coiffure près de chez vous à des prix vraiment intéressants </p>
         </div>
         
         <br>
