@@ -28,9 +28,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 
 <header class="header">
-    <div class="logo"><strong>ADMINISTRATION</strong></div>
+    <div class="logo"><h1>ADMINISTRATION</h1></div>
     <nav>
-        <a href="index.php" style="color: black;">Retour au site</a>
+        <a href="index.php">Retour au site</a>
     </nav>
 </header>
 
@@ -48,9 +48,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <label>Identifiant</label>
                     <input type="text" name="pseudo" required placeholder="Votre pseudo">
                 </div>
+
                 <div class="form-group">
                     <label>Mot de passe</label>
-                    <input type="password" name="mdp" required placeholder="••••••••">
+                    <div class="password-wrapper">
+                        <input type="password" name="mdp" id="mdp" required placeholder="••••••••">
+                        <button type="button" id="togglePassword" class="btn-toggle">👁️</button>
+                    </div>
                 </div>
                 <button type="submit" class="btn-login">Se connecter</button>
             </form>
@@ -60,6 +64,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <footer class="footer">
 </footer>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
