@@ -1,15 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Cinzel:wght@400..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lexend+Deca:wght@100..900&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: nunito;
+}
+
+body{
+    background-color: #fdf4f4;
+}
+
+:root{
+    --white-font: rgb(244, 244, 244);
 }
 
 a{
     text-decoration: none;
 }
 
-.footer-light{
-    background-color: black;
+main{
+    margin: 0;
+}
+
+.footer{
+    background-color: rgb(41, 41, 41);
+}
+
+.footer-contenu{
+    background-color: rgb(41, 41, 41);
     min-height: 10vh;
+    color: var(--white-font);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.copyright{
+    background-color: rgb(41, 41, 41);
+    color: var(--white-font);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.contacts, .navigation, .service-footer{
+    display: flex;
+    flex-direction: column;
+    color: var(--white-font);
+    padding: 10px;
+    font-size: 15px;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+
+
+.logo-reseaux{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-reseaux a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: rgb(241,241,241);  
+    transition-duration: 300ms;
+    font-size: 12px;
+}
+
+ .logo-reseaux a:hover{
+    cursor: pointer;
+    filter: brightness(0.7);
+ }
+
+.logo-reseaux svg:hover{
+    width: 20px;
+    cursor: pointer;
+    filter: brightness(0.7);
+}
+
+.liste-page, .liste-service-footer{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(241,241,241);    
+    transition-duration: 300ms;
+    font-size: 12px;
+    gap: 10px;
+}
+
+.liste-page a{
+    color: rgb(241,241,241);
+    text-decoration: none;
+}
+
+.liste-page a:hover{
+    filter: brightness(0.7);
+}
+
+.contacts svg{
+    width: 16px;
+    color: var(--white-font);
 }
 
 .header{
@@ -18,32 +114,362 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+    max-height: 60px;
+    background-color: rgb(41,41,41);
+    color: rgb(232,232,232);
 }
+
+.header a{
+    text-decoration: none;
+    color: rgb(232, 232, 232);
+    transition-duration: 400ms;
+}
+
+.header a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(232, 232, 232);
+    filter: brightness(0.7);
+}
+
+
+ 
 
 .svg-bar{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    color:var(--white-font) ;
 }
+/*------------------------------------------------------------------*/
 
+
+
+/* PAGE INFORMATIONS */
+
+
+
+/*------------------------------------------------------------------*/
 .container-info{
     margin-top: 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
 }
 
-.num-tel , .email{
-    background-color: rgb(223, 223, 223);
+.horaires-propos{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+
+.propos{
+    width: 400px;
+}
+
+.num-tel , .email, .adresse{
+    display: flex;
+    justify-content: center;
     padding: 15px;
+    color: white;
     border-radius: 30px;
 }
 
-h2{
+.horaire-entete{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.horaire-entete svg:hover{
+    cursor:default;
+    color: white;
+}
+
+.horaires-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(243,243,243);
+}
+
+.contact-photo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+
+
+.google-maps{
+    border-radius: 25px;
+    width: 760px;
+}
+
+
+.all-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+.jour-horaire{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+    min-width: 300px;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.contacts-container{
+    background-color: rgb(41,41,41);
+    padding: 15px;
+    border-radius: 15px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contacts-container button{
+    color: black;
+    background-color: rgb(218, 218, 218);
+    width: 75%;
+}
+
+.contacts-container a{
+    color: black;
+}
+
+.contacts-container h2{
+    color: rgb(218, 218, 218);
+}
+
+.contact-photo img, .contact-container{
+    width: 400px;
+    border-radius: 15px;
+}
+/*------------------------------------------------------------------*/
+
+
+
+/* PAGE ACCUEIL */
+
+
+/*------------------------------------------------------------------*/
+.button-accueil{
+    background-color: rgb(218, 218, 218);
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.image-container{
     display: flex;
     justify-content: center;
+    gap: 10px;
+}
+
+.main-image img{
+    width: 500px;
+    height : 100%;
+    border-radius: 10px;
+}
+
+.second-image{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.second-image img{
+    width: 200px;
+    height : 50%;
+    border-radius: 10px;
+}
+
+.second-image-container{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+.accueil-container{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accueil-container h2{
+    font-size: 36px;
+}
+
+.avis-body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 50px;
+    gap: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgb(218, 218, 218);
+}
+
+.avis-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 3px;
+}
+
+.avis{
+    background-color: #edebeb;
+    color: rgb(55, 55, 55);
+    padding: 15px;
+    border-radius: 15px;
+    width:400px;
+}
+
+
+.avis-pseudo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+.note{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+#star{
+    width: 16px;
+    height: 16px;
+    color: rgb(255, 166, 0);
+}
+/*------------------------------------------------------------------*/
+
+
+
+/* PAGE RESERVATION*/
+
+
+
+/*------------------------------------------------------------------*/
+.reservations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #dcdcdc;
+    padding: 20px;
+    min-height: 90vh;
+}
+
+.service{
+    padding: 5px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+.input-email{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.form-resa p{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    background-color: #a88f8f;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.form-resa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 300px;
+    font-size: 50px;
+}
+
+input{
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: 1px solid rgb(200, 200, 200);
+    height: 25px;
+    width: 80%;
+    font-size: 16px;
+}
+
+select{
+    height: 30px;
+    width: 80%;
+    font-size: 14px;
+}
+
+.service-container {
+    padding: 10px;
+    gap: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+/*------------------------------------------------------------------*/
+
+
+
+/*  GENERAL  */
+
+
+
+/*------------------------------------------------------------------*/
+a{
+    text-decoration: none;
 }
 
 span{
@@ -54,9 +480,241 @@ span{
 svg{
     width: 30px;
     height: 30px;
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+svg:hover{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    filter: brightness(0.7);
 }
 
 main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     min-height: 90vh;
     margin: 0;
+    margin-top: 10px;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    min-width: 100px;
+    padding: 10px;
+    color: var(--white-font);
+    background-color: rgb(41,41,41);
+    transition-duration: 400ms;
+}
+
+button:hover{
+    cursor: pointer;
+    filter: brightness(0.7);
+}
+
+select{
+    cursor:pointer;
+    border-radius: 25px ;
+    padding: 5px;
+    border: solid 1px rgb(234, 234, 234);
+}
+option{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+}
+/* --- SECTION LOGIN (Ajout à ton style.css) --- */
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Pour prendre la place dans ton <main> */
+    width: 100%;
+}
+
+.login-card {
+    background: white;
+    padding: 30px;
+    border-radius: 25px; /* Harmonisé avec tes .num-tel */
+    box-shadow: 0.3em 0.3em 0.3em 0.3em rgb(247, 247, 247);
+    width: 100%;
+    max-width: 350px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.login-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px; /* Style cohérent avec tes .service */
+    border: 1px solid rgb(234, 234, 234);
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.btn-login {
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 10px;
+    /* Utilisation de ta couleur de bouton existante */
+    background-color: rgb(41,41,41);
+}
+
+.btn-login:hover {
+    filter: brightness(0.9);
+}
+
+.error-login {
+    color: #d63031;
+    background-color: #fab1a033;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .all-info{
+        margin:10px;
+    }
+    .horaires-propos{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+}
+    .contact-photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+    .header {
+        gap: 15px;
+        text-align: center;
+    }
+
+    .all-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .container-info {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .google-maps {
+        width: 100% !important;
+        height: auto;
+        max-width: 350px;
+    }
+
+    .jour-horaire {
+        min-width: 90%;
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    .contact {
+        width: 100%;
+        align-items: center;
+    }
+
+    .num-tel, .email {
+        width: 80%;
+        text-align: center;
+    }
+
+    .image-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .main-image img{
+        width: 410px;
+        height : 100%;
+        border-radius: 10px;
+    }
+    .second-image-container{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .accueil-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .accueil-container h2{
+        font-size: 36px;
+    }
+}
+
+.password-wrapper {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.password-wrapper input {
+    width: 100% !important;
+    padding-right: 45px !important;
+    box-sizing: border-box;
+}
+
+.btn-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    color: #64748b;
+    width: auto;
+    min-width: unset;
+}
+
+.btn-toggle:hover {
+    filter: brightness(0.5);
+    opacity: 1;
 }
